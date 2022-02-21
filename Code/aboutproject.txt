@@ -1,0 +1,22 @@
+HOTEL MANAGEMENT SYSTEM PROJECT
+
+CLASS NAME 
+1. MainWindow
+2. HotelMenu
+3. UserLogin
+4. UserSignUp
+5. UserSecurity
+6. UserForgotPassword
+7. UserHomePage
+8. UserRoomsAvailable
+9. AdminLogin
+10. AdminHomePage
+11. AddRooms
+12. AdminBookRooms
+13. AddUserBooking
+14. CustomerCheckIn
+15. AdminRoomsBooked
+16. AdminAllRooms
+17. AdminRoomsAvailable
+18. AdminViewRecords
+19. CustomerRecords

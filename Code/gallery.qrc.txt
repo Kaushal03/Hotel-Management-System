@@ -1,0 +1,19 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>gallery/14_Mark-Premier-Two-Bedroom-Suite-2000x1333.jpg</file>
+    <file>gallery/19_The-Chic-and-Lively-Mark-Bar-2000x1333.jpg</file>
+    <file>gallery/20_The-Mark-Restaurant-Lounge-2000x1333.jpg</file>
+    <file>gallery/24_Fitness-Center-2000x1333.jpg</file>
+    <file>gallery/1403-office-2000x1333.jpg</file>
+    <file>gallery/170705_EJ_mark_hotel-3.jpg</file>
+    <file>gallery/170705_EJ_mark_hotel-5.jpg</file>
+    <file>gallery/Mark-3-Bedroom-Terrace-Living-Room.jpg</file>
+    <file>gallery/Mark-5-Bedroom-Terrace.jpg</file>
+    <file>gallery/Mark-5-Bedroom-Terrace-Living-Room-2.jpg</file>
+    <file>gallery/Mark-5-Bedroom-Terrace-Suite-Dining-Room.jpg</file>
+    <file>gallery/Mark-Five-Bedroom-Terrace-Suite-Master-Bedroom.jpg</file>
+    <file>gallery/PH-living-room.jpg</file>
+    <file>gallery/PHOTOSHOPPED-HERO-338x500.jpeg</file>
+    <file>gallery/The-Mark-Penthouse-Rooftop-Terrace-WEB.jpg</file>
+  </qresource>
+</RCC>
