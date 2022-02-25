@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>976</width>
+    <height>828</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+background:rgba;
+font-family:century gothic;
+font-size:24px;
+}
+QFrame
+{
+background:rgba;
+border-radius:15px
+}
+QPushButton
+{
+background:red;
+border-radius:60px;
+}
+QToolButton
+{
+background:red;
+border-radius:60px;
+}
+QLabel
+{
+color:white;
+background:transparent;
+}
+QPushButton
+{
+color:white;
+border-radius:15px;
+}
+QPushButton:hover
+{
+color:#333;
+border-radius:15px;
+background:#49ebff;
+}
+QLineEdit
+{
+background:transparent;
+border:none;
+color:#717072;
+border-bottom:1px solid #717072
+}
+</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>931</width>
+     <height>761</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:yellow;
+background-color: rgb(255, 170, 0);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>20</y>
+      <width>151</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 0, 0);
+FONT-WEIGHT:BOLD;
+font-size:40px;</string>
+    </property>
+    <property name="text">
+     <string>Gallery</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="homebtn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+font-size:14px;
+color:white;
+background:transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icons/arrow-left.svg</normaloff>icons/arrow-left.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>90</y>
+      <width>531</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'century gothic'; font-size:24px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/newPrefix/gallery/g1.jpg&quot; /&gt;&lt;img src=&quot;:/newPrefix/gallery/g3.jpg&quot; /&gt;&lt;img src=&quot;:/newPrefix/gallery/g4.jpg&quot; /&gt;&lt;img src=&quot;:/newPrefix/gallery/g5.jpg&quot; /&gt;&lt;img src=&quot;:/newPrefix/gallery/g6.jpg&quot; /&gt;&lt;img src=&quot;:/newPrefix/gallery/g7.jpg&quot; /&gt;&lt;img src=&quot;:/newPrefix/gallery/g8.jpg&quot; /&gt;&lt;img src=&quot;:/newPrefix/gallery/g9.jpeg&quot; /&gt;&lt;img src=&quot;:/newPrefix/gallery/g10.jpg&quot; /&gt;&lt;img src=&quot;:/newPrefix/gallery/g2.jpg&quot; /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icons/icons.qrc"/>
+  <include location="gallery.qrc.txt"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,116 @@
+select * from hotel_management.rooms;
+select * from hotel_management.user_register;
+select * from hotel_management.rooms where roomtype = "Single Bed Room- AC";
+ALTER TABLE `hotel_management`.`rooms` 
+CHANGE COLUMN `roomno` `roomno` VARCHAR(10) NOT NULL ;
+SELECT * FROM hotel_management.rooms ORDER BY roomno DESC LIMIT 1;
+UPDATE hotel_management.rooms SET roomno = ID where roomno is null;
+select * from hotel_management.add_customer;
+INSERT INTO hotel_management.room_available SELECT * FROM hotel_management.rooms ;
+
+
+SELECT * FROM hotel_management.room_available;
+INSERT INTO hotel_management.room_available SELECT * FROM hotel_management.rooms ;
+
+SELECT * FROM hotel_management.room_booked;
+INSERT INTO hotel_management.room_booked (roomno,roomtype,floorno,ID)
+SELECT roomno,roomtype,floorno,ID FROM hotel_management.room_available where roomno='102';
+
+SELECT * FROM hotel_management.add_customer;
+
+SELECT * FROM hotel_management.rooms;
+
+SELECT * FROM passport.user_register;
+
+
+CREATE TABLE `user` (
+  `email` varchar(40) NOT NULL,
+  `mobileno` varchar(10) NOT NULL,
+  `username` varchar(20) NOT NULL,
+  `password` varchar(20) NOT NULL,
+  `confirm_password` varchar(20) NOT NULL,
+  PRIMARY KEY (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+CREATE TABLE `user_register` (
+  `fname` varchar(20) NOT NULL,
+  `lname` varchar(20) NOT NULL,
+  `username` varchar(20) NOT NULL,
+  `dob` varchar(10) NOT NULL,
+  `gender` varchar(10) DEFAULT NULL,
+  `mobileno` varchar(10) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `nationality` varchar(10) NOT NULL,
+  `martialstatus` varchar(10) NOT NULL,
+  `aadhar` varchar(20) NOT NULL,
+  `pan` varchar(20) NOT NULL,
+  `driving` varchar(20) NOT NULL,
+  `_10mark` varchar(20) NOT NULL,
+  `_12mark` varchar(20) NOT NULL,
+  `checkstatus` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+
+CREATE TABLE `add_customer` (
+  `customername` varchar(50) NOT NULL,
+  `age` varchar(45) NOT NULL,
+  `gender` varchar(45) NOT NULL,
+  `mobileno` varchar(45) NOT NULL,
+  `roomtype` varchar(45) NOT NULL,
+  `idproof` varchar(45) NOT NULL,
+  `idproofnumber` varchar(45) NOT NULL,
+  `checkin` date NOT NULL,
+  `roomno` varchar(45) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+CREATE TABLE `room_available` (
+  `roomno` varchar(10) DEFAULT NULL,
+  `roomtype` varchar(45) NOT NULL,
+  `floorno` varchar(45) NOT NULL,
+  `ID` int NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`ID`),
+  UNIQUE KEY `roomno_UNIQUE` (`roomno`)
+) ENGINE=InnoDB AUTO_INCREMENT=135 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+CREATE TABLE `room_booked` (
+  `roomno` varchar(10) DEFAULT NULL,
+  `roomtype` varchar(45) NOT NULL,
+  `floorno` varchar(45) NOT NULL,
+  `ID` int NOT NULL,
+  PRIMARY KEY (`ID`),
+  UNIQUE KEY `roomno_UNIQUE` (`roomno`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+CREATE TABLE `rooms` (
+  `roomno` varchar(10) DEFAULT NULL,
+  `roomtype` varchar(45) NOT NULL,
+  `floorno` varchar(45) NOT NULL,
+  `ID` int NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`ID`),
+  UNIQUE KEY `roomno_UNIQUE` (`roomno`)
+) ENGINE=InnoDB AUTO_INCREMENT=135 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+CREATE TABLE `user_register` (
+  `email` varchar(45) NOT NULL,
+  `mobileno` varchar(45) NOT NULL,
+  `username` varchar(45) NOT NULL,
+  `password` varchar(45) NOT NULL,
+  `confirmpass` varchar(45) NOT NULL,
+  `birthplace` varchar(45) NOT NULL,
+  `bfname` varchar(45) NOT NULL,
+  `fathername` varchar(45) NOT NULL,
+  PRIMARY KEY (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+CREATE TABLE hotel_management.view_customer_records AS SELECT * FROM hotel_management.add_customer;
+INSERT INTO hotel_management.view_customer_records SELECT * FROM hotel_management.add_customer ;
+
+SELECT * FROM hotel_management.room_available;
+INSERT INTO hotel_management.room_available (roomno, roomtype, floorno,ID)
+SELECT roomno, roomtype, floorno,id FROM hotel_management.room_booked
+WHERE id='101';
+

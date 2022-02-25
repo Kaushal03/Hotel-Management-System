@@ -1,0 +1,29 @@
+HOTEL MANAGEMENT SYSTEM PROJECT
+
+CLASS NAME 
+1. MainWindow
+2. HotelMenu
+3. UserLogin
+4. UserSignUp
+5. UserSecurity
+6. UserForgotPassword
+7. UserHomePage
+8. UserRoomsAvailable
+9. AdminLogin
+10. AdminHomePage
+11. AddRooms
+12. AdminBookRooms
+13. AddUserBooking
+14. CustomerCheckIn
+15. AdminRoomsBooked
+16. AdminAllRooms
+17. AdminRoomsAvailable
+18. AdminViewRecords
+19. CustomerRecords
+
+
+Room Tariff per night (INR)	GST Applicable 
+Lesser than INR 1000	0% (no tax)
+Greater than INR 1000 but lesser 2500	12%
+Greater than INR 2500 but lesser than 7500	18%
+Greater than INR 7500	28%
