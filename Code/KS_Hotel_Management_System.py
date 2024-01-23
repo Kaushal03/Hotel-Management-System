@@ -23,7 +23,7 @@ from mysql.connector import errorcode
 
 conn = mysql.connector.connect(
     user='root', 
-    password='india123abcd$',
+    password='enter password',
     host='127.0.0.1',
     database='hotel_management')
 
